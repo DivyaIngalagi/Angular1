@@ -1,0 +1,16 @@
+<div>
+
+<h1>{{title}}</h1>
+
+<button [appTtClass]="'blue'">Click Me!!!</button>
+<br/>Show Me
+
+<input type="checkbox" [(ngModel)]="show">
+
+<div *appTtIf="show">
+  Using the customeif directive
+</div>
+<div *ngIf="show">
+  Using the gif directive
+</div>
+</div>
